@@ -1,0 +1,5 @@
+docker run -d -p 7833:80 --name mine-order-service_0_9174e352 -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false
+ -e WEBSITE_SITE_NAME=mine-order-service -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0
+  -e WEBSITE_HOSTNAME=mine-order-service.azurewebsites.net
+  -e WEBSITE_INSTANCE_ID=4813575b787ba697ad454beefe68d30ecc2b1113fe79b1c52690ec36871785f6
+  membershipacr.azurecr.io/order-service:v1 docker run --name member-order-service -p 80:8080 membershipACR/order-service:v1

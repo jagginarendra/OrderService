@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-public class SearchController {
+public class SearchController extends BaseController{
 
     @GetMapping("/names/all")
     public List<String> getAllNames(){
